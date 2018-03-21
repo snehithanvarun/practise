@@ -1,0 +1,33 @@
+package com.www.Test;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.SendKeysAction;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class TestLocators extends BaseClass {
+
+	public TestLocators() {
+		// TODO Auto-generated constructor stub
+		PageFactory.initElements(driver, this);
+
+	}
+	@FindBy(xpath="//input[@id='username']")
+	private WebElement userName;
+	@FindBy(id="password")
+	private WebElement pass;
+	@FindBy(id="login")
+	private WebElement login;
+	public WebElement getUserName() {
+		return userName;
+	}
+	public WebElement getPass() {
+		return pass;
+	}
+	public WebElement getLogin() {
+		return login;
+	}
+	
+
+	
+}

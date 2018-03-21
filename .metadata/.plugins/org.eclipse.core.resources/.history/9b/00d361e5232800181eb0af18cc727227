@@ -1,0 +1,27 @@
+package com.pom.org.addactin;
+
+import org.addactin.Base;
+import org.testng.annotations.Test;
+
+public class Logic extends Base 
+{
+	
+	@Test
+	
+	private void operation() 
+	
+	
+	{
+		locaters loc=new locaters();
+		
+		getdriver("http://adactin.com/HotelApp/");
+		inputtext(loc.getUname(), "praveen1708");
+		inputtext(loc.getPwd(), "ppk123ppk");
+		click(loc.getLog());
+		
+		
+	}
+	 
+	
+
+}

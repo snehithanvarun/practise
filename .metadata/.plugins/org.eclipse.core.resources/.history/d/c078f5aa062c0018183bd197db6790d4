@@ -1,0 +1,37 @@
+package com.www.Test;
+
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+public class TestPom extends BaseClass {
+	TestLocators loc;
+		// TODO Auto-generated constructor stub
+	@BeforeMethod
+	public void test1() {
+		// TODO Auto-generated method stub
+		getdriver("http://adactin.com/HotelApp/");
+	}
+	@AfterMethod
+	public void close() {
+		// TODO Auto-generated method stub
+//		closeApplication(driver);
+	}
+	@org.testng.annotations.Test
+	public void test2() {
+		loc=new TestLocators();
+		inputtext(loc.getUserName(), "");
+		inputtext(loc.getPass(), "");
+		click(loc.getLogin());
+	}
+	@Test
+	private void test3() {
+		loc=new TestLocators();
+		inputtext(loc.getUserName(), "praveen1708");
+		inputtext(loc.getPass(), "1236547899");
+		click(loc.getLogin());
+	}
+	
+	
+}

@@ -1,0 +1,25 @@
+package com.www.Test;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class TestLocators {
+
+	@FindBy(id="")
+	private WebElement userName;
+	@FindBy(id="")
+	private WebElement pass;
+	@FindBy(id="")
+	private WebElement login;
+	public WebElement getUserName() {
+		return userName;
+	}
+	public WebElement getPass() {
+		return pass;
+	}
+	public WebElement getLogin() {
+		return login;
+	}
+	
+	
+}

@@ -1,0 +1,33 @@
+package org.addactin;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Base {
+	public static WebDriver ottunar;
+
+	
+	public static WebDriver getdriver(String link) {
+		
+	      System.setProperty("webdriver.chrome.driver", "C:\\Users\\Snehithan\\eclipse-sample\\selenium\\driver\\chromedriver.exe");
+	      WebDriver ottunar = new ChromeDriver();
+	      ottunar.get(link);
+	      return ottunar;
+	      
+		}
+			public static void inputtext(WebElement entry, String data)
+		{
+			
+	        entry.sendKeys(data);
+		}
+		
+		public static void click(WebElement tuck) 
+		{
+			
+	           tuck.click();
+		}
+		
+		
+		
+	}

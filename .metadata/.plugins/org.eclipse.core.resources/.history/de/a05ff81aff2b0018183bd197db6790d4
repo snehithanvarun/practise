@@ -1,0 +1,11 @@
+package com.www.Test;
+
+import org.openqa.selenium.support.PageFactory;
+
+public class TestPom {
+
+	public TestPom() {
+		// TODO Auto-generated constructor stub
+		PageFactory.initElements(driver, this);
+	}
+}

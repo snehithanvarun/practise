@@ -1,0 +1,6 @@
+package com.www.Test;
+
+public class BaseClass {
+
+	WebDriver driver=new Chrom
+}
